@@ -2,6 +2,7 @@ import os
 os.system("playwright install")
 import csv
 #import aenum
+import lyzr
 from lyzr import ChatBot
 import smtplib
 from email.mime.multipart import MIMEMultipart
