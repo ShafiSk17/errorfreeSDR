@@ -1,8 +1,5 @@
 import os
-os.system("playwright install")
 import csv
-#import aenum
-import lyzr
 from lyzr import ChatBot
 import smtplib
 from email.mime.multipart import MIMEMultipart
@@ -10,9 +7,9 @@ from email.mime.text import MIMEText
 import imaplib
 import email
 import time
-import asyncio
 import nest_asyncio
 import streamlit as st
+
 
 nest_asyncio.apply()
 
@@ -145,3 +142,6 @@ if st.sidebar.button("Run"):
         monitor_process(companies_info, smtp_config, sender_email, product_info, subject)
     else:
         st.error("Please fill in all fields.")
+
+import tracemalloc
+tracemalloc.start()
